@@ -1,0 +1,16 @@
+[[project]]
+name = "d3rjust1n.xyz"
+desc = "Zola blog, diese Seite hier!"
+tags = []
+links = [
+    { name = "Website", url = "https://d3rjust1n.xyz"},
+    { name = "Github", url = "https://github.com/d3rjust1n/d3rjust1n.xyz"},
+]
+
+[[project]]
+name = "HinkoBot"
+desc = "Discord Bot für den Hinkowicz Discord Server"
+tags = []
+links = [
+    { name = "Website", url = "https://hinkobot.d3rjust1n.xyz"},
+]

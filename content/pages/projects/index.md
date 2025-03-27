@@ -1,5 +1,7 @@
 +++
 title = "Projekte"
 path = "projekte"
-template = "projects.html"
+template = "pages.html"
 +++
+
+{{ projects(path="data.toml", format="toml") }}

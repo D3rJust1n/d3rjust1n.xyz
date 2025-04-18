@@ -63,7 +63,7 @@ social = [
     { name = "youtube", url = "https://youtube.com/@d3rjust1n" },
     { name = "discord", url = "https://d3r.eu/dc" },
     { name = "twitch", url = "https://twitch.tv/d3rjust1nn" },
-    { name = "x", url = "https://x.com/d3rjust1nn" },
+    { name = "bluesky", url = "https://bsky.app/profile/d3rjust1n.bsky.social" },
     { name = "anilist", url = "https://anilist.co/user/d3rjust1n" },
     { name = "github", url = "https://github.com/d3rjust1n" },
     { name = "codeberg", url = "https://codeberg.org/d3rjust1n" },

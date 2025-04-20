@@ -1,7 +1,7 @@
 +++
 title = "Tastatur Empfehlungen"
 date = "2024-12-31"
-updated = "2025-03-27"
+updated = "2025-04-20"
 description = "Tastatur Empfehlungen von Hardware Netzwerk und skio928"
 authors = ["D3rJust1n", "Hardware Netzwerk", "skio928"]
 [taxonomies]

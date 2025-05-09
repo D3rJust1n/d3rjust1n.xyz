@@ -1,7 +1,7 @@
 +++
 title = "Maus Empfehlungen"
 date = "2025-04-13"
-# updated = ""
+updated = "2025-05-06"
 description = "Maus Empfehlungen von Hardware Netzwerk und skio928"
 authors = ["D3rJust1n", "Hardware Netzwerk", "skio928"]
 [taxonomies]

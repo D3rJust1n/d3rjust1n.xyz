@@ -8,9 +8,30 @@ links = [
 ]
 
 [[project]]
-name = "HinkoBot"
-desc = "Discord Bot für den Hinkowicz Discord Server"
-tags = []
+name = "Tastatur Empfehlungen"
+desc = "Tastatur Empfehlungen in Zusammenarbeit mit Hardware Netzwerk und skio928"
+tags = ["tastaturen", "peripherie", "gaming"]
 links = [
-    { name = "Website", url = "https://hinkobot.d3rjust1n.xyz"},
+    { name = "Post", url = "/tastatur-empfehlungen"},
+    { name = "Hardware Netzwerk", url = "https://www.youtube.com/@HardwareNetzwerk"},
+    { name = "skio928", url = "https://www.instagram.com/skio928"},
+]
+
+[[project]]
+name = "Maus Empfehlungen"
+desc = "Maus Empfehlungen in Zusammenarbeit mit Hardware Netzwerk und skio928"
+tags = ["mäuse", "peripherie", "gaming"]
+links = [
+    { name = "Post", url = "/maus-empfehlungen"},
+    { name = "Hardware Netzwerk", url = "https://www.youtube.com/@HardwareNetzwerk"},
+    { name = "skio928", url = "https://www.instagram.com/skio928"},
+]
+
+[[project]]
+name = 'Lisho'
+desc = 'Link Shorter geschrieben in Rust (forked)'
+tags = ['software', 'docker', 'selfhosting', 'homelab']
+links = [
+    { name = 'Source Code', url = 'https://github.com/d3rjust1n/lisho'},
+    { name = 'Blog Post (coming soon)', url = ''},
 ]

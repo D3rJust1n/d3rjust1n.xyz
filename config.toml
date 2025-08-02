@@ -67,6 +67,7 @@ social = [
     { name = "anilist", url = "https://anilist.co/user/d3rjust1n" },
     { name = "github", url = "https://github.com/d3rjust1n" },
     { name = "codeberg", url = "https://codeberg.org/d3rjust1n" },
+    { name = 'mastodon', url = "https://mastodon.social/@d3rjust1n"},
     { name = "rss", url = "$BASE_URL/rss.xml" }
 ]
 
@@ -74,6 +75,7 @@ social = [
 menu_name = [
     {url = "$BASE_URL/tags", name = "Tags"},
     {url = "$BASE_URL/projekte", name = "Projekte"},
+#    {url = "$BASE_URL/authors", name = "Autoren"}
 ]
 
 [extra.footer]

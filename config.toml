@@ -48,7 +48,7 @@ paginate_by = 5
 [extra]
 # Put all your custom variables here
 
-#custom_head = '<a rel="me" href="https://mastodon.social/@d3rjust1n">Mastodon</a>'
+custom_head = '<a rel="me" href="https://mastodon.social/@d3rjust1n">Mastodon</a>'
 
 mermaid = true
 

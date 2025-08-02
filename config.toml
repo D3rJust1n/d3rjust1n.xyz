@@ -48,8 +48,6 @@ paginate_by = 5
 [extra]
 # Put all your custom variables here
 
-custom_head = '<a rel="me" href="https://mastodon.social/@d3rjust1n">Mastodon</a>'
-
 mermaid = true
 
 header_menu_name = "menu_name"
@@ -58,6 +56,8 @@ header_menu_name = "menu_name"
 name = "D3rJust1n"
 avatar_url = "images/pb.png"
 bio = "Mein Blog"
+
+fediverse_creator = { handle = "d3rjust1n", domain = "mastodon.social" }
 
 social = [
     { name = "instagram", url = "https://instagram.com/d3rjust1n" },

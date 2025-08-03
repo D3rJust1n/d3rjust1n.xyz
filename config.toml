@@ -57,8 +57,6 @@ name = "D3rJust1n"
 avatar_url = "images/pb.png"
 bio = "Mein Blog"
 
-fediverse_creator = { handle = "d3rjust1n", domain = "mastodon.social" }
-
 social = [
     { name = "instagram", url = "https://instagram.com/d3rjust1n" },
     { name = "tiktok", url = "https://tiktok.com/@d3rjust1nn" },

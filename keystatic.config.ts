@@ -111,7 +111,7 @@ export default config({
   storage: {
     // kind: 'local'
     kind: 'github',
-    repo: 'D3rJust1n/keystatic-test',
+    repo: 'D3rJust1n/d3rjust1n.xyz',
     branchPrefix: 'updates/'
   },
 

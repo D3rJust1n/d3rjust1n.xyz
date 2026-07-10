@@ -1,3 +1,50 @@
 {
-  "items": []
+  "items": [
+    {
+      "name": "Neo75 CU",
+      "brand": "Neo Studios",
+      "price": "200-250€",
+      "layout": [
+        "ANSI",
+        "ISO"
+      ],
+      "features": [
+        "VIA",
+        "Bluetooth"
+      ],
+      "links": [
+        {
+          "shop": "Monacokeys",
+          "url": "https://monacokeys.de/en/products/neo75-cu-75-aluminium-iso-ansi-keyboard-kit"
+        },
+        {
+          "shop": "Qwertykeys",
+          "url": "https://www.qwertykeys.com/products/neo75cu?_pos=2&_sid=610547e7e&_ss=r"
+        }
+      ]
+    },
+    {
+      "name": "Neo75",
+      "brand": "Neo Studios",
+      "price": "150-200€",
+      "layout": [
+        "ISO",
+        "ANSI"
+      ],
+      "features": [
+        "VIA",
+        "Bluetooth"
+      ],
+      "links": [
+        {
+          "shop": "Monacokeys",
+          "url": "https://monacokeys.de/en/products/neo75-75-mechanical-aluminium-custom-keyboard-kit"
+        },
+        {
+          "shop": "Qwertykeys",
+          "url": "https://www.qwertykeys.com/products/neo75-custom-mechanical-keyboard"
+        }
+      ]
+    }
+  ]
 }

@@ -1,3 +1,50 @@
 {
-  "items": []
+  "items": [
+    {
+      "name": "Neo65 CU",
+      "brand": "Neo Studios",
+      "price": "200-250€",
+      "layout": [
+        "ISO",
+        "ANSI"
+      ],
+      "features": [
+        "Bluetooth",
+        "VIA"
+      ],
+      "links": [
+        {
+          "shop": "Monacokeys",
+          "url": "https://monacokeys.de/en/products/neo65cu-iso-ansi-barebone-aluminium-keyboard-kit"
+        },
+        {
+          "shop": "Qwertykeys",
+          "url": "https://www.qwertykeys.com/products/neo65-cu-custom-mechanical-keyboard?_pos=2&_sid=beba8becb&_ss=r"
+        }
+      ]
+    },
+    {
+      "name": "Neo65 Core Plus",
+      "brand": "Neo Studios",
+      "price": "150-200€",
+      "layout": [
+        "ISO",
+        "ANSI"
+      ],
+      "features": [
+        "VIA",
+        "Bluetooth"
+      ],
+      "links": [
+        {
+          "shop": "Monacokeys",
+          "url": "https://monacokeys.de/en/products/neo65-core-plus-65-iso-ansi-mechanical-aluminium-custom-keyboard-kit"
+        },
+        {
+          "shop": "Qwertykeys",
+          "url": "https://www.qwertykeys.com/products/neo65-core-plus-custom-mechanical-keyboard?_pos=1&_sid=424789e0c&_ss=r&variant=49091508830451"
+        }
+      ]
+    }
+  ]
 }

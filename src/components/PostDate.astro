@@ -1,0 +1,23 @@
+---
+import { formatDate } from '../utils/date';
+
+interface Props {
+  pubDate: Date;
+  updatedDate?: Date;
+}
+
+const { pubDate, updatedDate } = Astro.props;
+---
+
+<time datetime={pubDate.toISOString()} class="text-gray-600 dark:text-gray-400">
+  {formatDate(pubDate)}
+</time>
+
+{
+  updatedDate && (
+    <span class="text-gray-600 dark:text-gray-400">
+      {' '}
+      • ↻ {formatDate(updatedDate)}
+    </span>
+  )
+}

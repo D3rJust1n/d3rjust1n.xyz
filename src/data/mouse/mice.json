@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "name": "Sora V2",
+      "grip": "claw",
+      "price": "80-110€",
+      "brand": "Ninjutso",
+      "links": [
+        {
+          "shop": "Ninjutso",
+          "url": "https://ninjutso.com/products/ninjutso-sora-v2?ref=hwnw"
+        }
+      ]
+    },
+    {
+      "name": "V8",
+      "grip": "palm",
+      "price": "50-80€",
+      "brand": "Scyrox",
+      "links": [
+        {
+          "shop": "MaxGaming",
+          "url": "https://www.maxgaming.gg/de/kabellos/v8-kabellos-8k-superlight-gaming-maus-schwarz?linkId=lp_042351&sourceId=hwnw&tenantId=maxfps"
+        },
+        {
+          "shop": "AliExpress",
+          "url": "https://de.aliexpress.com/item/1005010545546372.html"
+        }
+      ]
+    },
+    {
+      "name": "M4",
+      "grip": "fingertip",
+      "price": "30-50€",
+      "brand": "Keychron",
+      "links": [
+        {
+          "shop": "Keychron",
+          "url": "https://www.keychron.com/products/keychron-m4-wireless-mouse"
+        }
+      ]
+    }
+  ]
+}

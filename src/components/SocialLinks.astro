@@ -1,0 +1,146 @@
+---
+import { siteConfig } from '../config';
+import { Icon } from 'astro-icon/components';
+---
+
+<div class="flex gap-4">
+  {
+    siteConfig.social.github && (
+      <a
+        href={siteConfig.social.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        aria-label="GitHub"
+      >
+        <Icon name="simple-icons:github" class="w-6 h-6" />
+      </a>
+    )
+  }
+  {
+    siteConfig.social.email && (
+      <a
+        href={`mailto:${siteConfig.social.email}`}
+        class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        aria-label="Email"
+      >
+        <Icon name="simple-icons:protonmail" class="w-6 h-6" />
+      </a>
+    )
+  }
+  {
+    siteConfig.social.youtube && (
+      <a
+        href={siteConfig.social.youtube}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        aria-label="YouTube"
+      >
+        <Icon name="simple-icons:youtube" class="w-6 h-6" />
+      </a>
+    )
+  }
+  {
+    siteConfig.social.anilist && (
+      <a
+        href={siteConfig.social.anilist}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        aria-label="AniList"
+      >
+        <Icon name="simple-icons:anilist" class="w-6 h-6" />
+      </a>
+    )
+  }
+  {
+    siteConfig.social.codeberg && (
+      <a
+        href={siteConfig.social.codeberg}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        aria-label="Codeberg"
+      >
+        <Icon name="simple-icons:codeberg" class="w-6 h-6" />
+      </a>
+    )
+  }
+  {
+    siteConfig.social.mastodon && (
+      <a
+        href={siteConfig.social.mastodon}
+        target="_blank"
+        rel="noopener noreferrer me"
+        class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        aria-label="Mastodon"
+      >
+        <Icon name="simple-icons:mastodon" class="w-6 h-6" />
+      </a>
+    )
+  }
+  {
+    siteConfig.social.bsky && (
+      <a
+        href={siteConfig.social.bsky}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        aria-label="Bluesky"
+      >
+        <Icon name="simple-icons:bluesky" class="w-6 h-6" />
+      </a>
+    )
+  }
+  {
+    siteConfig.social.twitch && (
+      <a
+        href={siteConfig.social.twitch}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        aria-label="Twitch"
+      >
+        <Icon name="simple-icons:twitch" class="w-6 h-6" />
+      </a>
+    )
+  }
+  {
+    siteConfig.social.discord && (
+      <a
+        href={siteConfig.social.discord}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        aria-label="Discord"
+      >
+        <Icon name="simple-icons:discord" class="w-6 h-6" />
+      </a>
+    )
+  }
+  {
+    siteConfig.social.instagram && (
+      <a
+        href={siteConfig.social.instagram}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        aria-label="Instagram"
+      >
+        <Icon name="simple-icons:instagram" class="w-6 h-6" />
+      </a>
+    )
+  }
+  {
+    siteConfig.social.rss && (
+      <a
+        href="/rss.xml"
+        class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        aria-label="RSS Feed"
+      >
+        <Icon name="simple-icons:rss" class="w-6 h-6" />
+      </a>
+    )
+  }
+</div>

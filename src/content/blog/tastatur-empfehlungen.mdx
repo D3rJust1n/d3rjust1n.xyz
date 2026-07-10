@@ -1,0 +1,94 @@
+---
+title: 'Tastatur Empfehlungen'
+description: 'Testing'
+pubDate: 2025-10-12
+updatedDate: 2026-01-02
+author: ['d3rjust1n', 'shu', 'hardware-netzwerk']
+tags: ['beratung', 'peripherie', 'tastaturen', 'empfehlungen']
+draft: false
+---
+
+import Admonition from '../../components/Admonition.astro';
+import KeyboardFilter from '../../components/filter/KeyboardFilter.tsx';
+import { keyboards } from '../../data/keyboards/index.ts';
+
+## Info
+
+Willkommen zur Tastatur-Empfehlungsliste von Hardware Netzwerk, Shu und Skio928.
+Diese Liste bietet eine umfassende Übersicht und Empfehlungen zu verschiedenen Tastaturen und Kits für jeden Bedarf und jedes Budget.
+Sie ist in drei Hauptkategorien unterteilt:
+
+- Mechanische Tastaturen: Diese Kategorie umfasst eine Vielzahl an Tastaturen mit mechanischen Switches, sortiert nach Größe (60/65 %, 75 %, 80 %/TKL, 98/100 %) und Preisklasse - von Einsteiger bis hin zu Premium Boards
+- Hall Effect Tastaturen: Hier findest du Tastaturen mit Hall Effect Switches, die für ihre Schnelligkeit und anpassbare Actuation geschätzt werden.
+  Dazu haben sie Features wie Rapid Trigger, DKS und Snap Tap/SOCD usw.
+  Auch hier sind die Tastaturen nach Preisklasse und Größe sortiert.
+- DIY/Barebone Kits: Für diejenigen, die gerne ihre eigene Tastatur zusammenstellen möchten, bieten wir eine Auswahl an DIY/Barebone Kits.
+  Diese kommen ohne Switches und Keycaps, bei den meisten sollten Stabilizers schon dabei sein.
+
+<Admonition type="info" title="Info zu den Empfehlungen">
+    Die Listen werden in unregelmäßigen Abständen aktualisiert.
+    So kann es passieren, dass manche Produkte nicht mehr verfügbar sind oder neue Produkte fehlen.
+
+    Sollte euch so etwas auffallen könnt ihr mir dies sehr gerne über [GitHub als Issue](https://github.com/D3rJust1n/d3rjust1n.xyz/issues) oder auf meinem [Discord Server](https://d3r.eu/dc) im Feedback Forum mitteilen
+
+</Admonition>
+
+## Layout und Formfaktor
+
+Vor dem Kauf einer Tastatur sollte man sich überlegen welches Layout und welchen Formfaktor man haben möchte.
+
+#### ISO oder ANSI Layout
+
+ISO ist der europäische Standard, ANSI der Weltweite, mit beiden lassen sich aber unabhängig auch die Umlaute (ÄÖÜ) usw. schreiben
+
+<figure>
+  <img
+    src="/src/assets/blog/tastatur-empfehlungen/iso-vs-ansi.png"
+    alt="iso vs ansi"
+  />
+  <figcaption>
+    Quelle:{' '}
+    <a
+      href="https://www.hongkiat.com/blog/mechanical-keyboard-guide/#keyboard-layout/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Hongkiat
+    </a>
+  </figcaption>
+</figure>
+
+#### Formfaktor
+
+Es gibt unzählige Formfaktoren bei Tastaturen. Hier ist eine Übersicht welche die unterschiedlichen Formfaktoren zeigt
+
+<figure>
+  <img
+    src="/src/assets/blog/tastatur-empfehlungen/tastatur-formfaktoren.png"
+    alt="formfaktoren"
+  />
+  <figcaption>
+    Quelle:{' '}
+    <a
+      href="https://www.reddit.com/r/MechanicalKeyboards/comments/lp314u/yet_another_layout_infographic/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      r/MechanicalKeyboards
+    </a>
+  </figcaption>
+</figure>
+
+<Admonition type="tip" title="Ref-Links und Rabatt-Codes">
+    Mit diesen Rabatt-Codes kannst du bei den gelisteten Shops sparen
+
+    * [Akko](https://akkogear.de), 10 % Rabatt mit Code **hwnw**
+    * [Dornfinger](https://dornfinger.com), 5 % Rabatt mit Code **hwnw**
+    * [Monacokeys](https://monacokeys.de), 5 % Rabatt mit Code **hwnw** (gilt nicht für Tastaturen)
+    * [Whackydesks](https://whackydesks.com), 5 % Rabatt mit Code **TechTypes**
+    * [Womier](https://womierkeyboard.com/), 10 % Rabatt mit Code **TechTypes**
+    * [Yunzii](https://yunzii.com/de), 5$ Rabatt mit Code **niklas**
+
+</Admonition>
+## Empfehlungen
+<KeyboardFilter client:load keyboards={keyboards} />

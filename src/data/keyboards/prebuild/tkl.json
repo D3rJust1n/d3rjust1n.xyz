@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "name": "Evo80",
+      "brand": "QwertyKeys",
+      "price": "150-200€",
+      "layout": [
+        "ISO",
+        "ANSI"
+      ],
+      "features": [
+        "VIA",
+        "QMK"
+      ],
+      "links": [
+        {
+          "shop": "Monacokeys",
+          "url": "https://geizhals.de"
+        }
+      ]
+    },
+    {
+      "name": "Mass80",
+      "brand": "Milkyway",
+      "price": "250€ +",
+      "layout": [
+        "ISO",
+        "ANSI"
+      ],
+      "features": [
+        "VIA",
+        "QMK"
+      ],
+      "links": [
+        {
+          "shop": "Monacokeys",
+          "url": "https://monacokeys.de/products/mw-mass80-the-smartest-keyboard-with-interactive-screen"
+        }
+      ]
+    }
+  ]
+}

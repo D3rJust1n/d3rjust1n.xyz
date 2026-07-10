@@ -1,0 +1,44 @@
+---
+import { siteConfig } from '../config';
+import Search from './Search.astro';
+
+const navItems = [
+  { href: '/', text: 'Home' },
+  { href: '/blog', text: 'Blog' },
+  { href: '/tags', text: 'Tags' },
+  { href: '/archive', text: 'Archiv' },
+  {
+    href: 'https://github.com/d3rjust1n/d3rjust1n.xyz',
+    text: 'Repo',
+    target: '_blank',
+    rel: 'noopener noreferrer',
+  },
+];
+---
+
+<header class="py-6">
+  <nav class="flex justify-between items-center flex-wrap">
+    <a href="/" class="text-2xl font-bold text-gray-900 dark:text-white"
+      >{siteConfig.title}</a
+    >
+    <div class="flex items-center gap-6">
+      <ul class="flex gap-6">
+        {
+          navItems.map(({ href, text, target, rel }) => (
+            <li>
+              <a
+                href={href}
+                target={target}
+                rel={rel}
+                class="text-gray-700 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white"
+              >
+                {text}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      {siteConfig.search && <Search />}
+    </div>
+  </nav>
+</header>

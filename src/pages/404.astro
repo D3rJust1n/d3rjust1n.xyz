@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="404 Nicht gefunden">
+  <div
+    class="flex flex-col items-center justify-center min-h-[60vh] text-center"
+  >
+    <h1 class="text-9xl font-bold mb-4">
+      <span
+        class="bg-linear-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent"
+        >404</span
+      >
+    </h1>
+    <p class="text-2xl mb-8 text-gray-600 dark:text-gray-300">
+      Hey, ich glaube du hast dich verlaufen :)
+    </p>
+    <p class="text-lg mb-8 text-gray-600 dark:text-gray-300">
+      Die Seite die du versucht hast zu finden existiert nicht oder wurde
+      umbenannt
+    </p>
+
+    <a
+      href="/"
+      class="px-6 py-3 text-lg font-medium text-white bg-primary-500 rounded-lg hover:bg-primary-600 transition-colors"
+    >
+      Startseite
+    </a>
+  </div>
+</BaseLayout>

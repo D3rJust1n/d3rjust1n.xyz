@@ -1,0 +1,27 @@
+---
+import { siteConfig } from '../config';
+
+const startYear = 2024;
+const currentYear = new Date().getFullYear();
+const yearDisplay =
+  currentYear > startYear ? `${startYear}-${currentYear}` : startYear;
+---
+
+<footer class="py-6 px-4 text-gray-600 dark:text-gray-400">
+  <div class="flex flex-wrap items-center justify-between gap-4 text-sm">
+    <div class="flex items-center gap-2">
+      <span>&copy; {yearDisplay} {siteConfig.title}</span>
+      <span>|</span>
+      <a href="/imprint" class="hover:text-primary-500">Impressum</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <span
+        >Powered by <a
+          href="https://github.com/larry-xue/astro-zen-blog"
+          class="text-primary-500 hover:underline"
+          target="_blank">Astro Zen Blog</a
+        ></span
+      >
+    </div>
+  </div>
+</footer>

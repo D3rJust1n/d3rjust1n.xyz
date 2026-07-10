@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-primary-50: #f2f8f3;
+  --color-primary-100: #e6f1e8;
+  --color-primary-200: #cde3d2;
+  --color-primary-300: #a7cbb0;
+  --color-primary-400: #7baf89;
+  --color-primary-500: #559469;
+  --color-primary-600: #437a54;
+  --color-primary-700: #366144;
+  --color-primary-800: #2c4d37;
+  --color-primary-900: #23402d;
+  --color-primary-950: #0d1911;
+}
+
+/* Typography - Light Mode */
+.prose {
+  max-width: 65ch;
+  color: rgb(31, 41, 55);
+  line-height: 1.75;
+}
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: rgb(17, 24, 39);
+  font-weight: 700;
+}
+.prose a {
+  color: rgb(37, 99, 235);
+}
+.prose a:hover {
+  color: rgb(29, 78, 216);
+}
+.prose figcaption a {
+  display: inline;
+  color: var(--color-primary-600);
+}
+.prose figcaption a:hover {
+  color: var(--color-primary-500);
+}
+.prose code {
+  color: rgb(31, 41, 55);
+  background-color: rgb(243, 244, 246);
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-weight: 400;
+}
+
+/* Typography - Dark Mode */
+.dark .prose {
+  color: rgb(229, 231, 235);
+}
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3,
+.dark .prose h4 {
+  color: rgb(243, 244, 246);
+}
+.dark .prose a {
+  color: rgb(96, 165, 250);
+}
+.dark .prose a:hover {
+  color: rgb(147, 197, 253);
+}
+.dark .prose code {
+  color: rgb(243, 244, 246);
+  background-color: rgb(31, 41, 55);
+}
+.dark .prose blockquote {
+  color: rgb(229, 231, 235);
+  border-left-color: rgb(75, 85, 99);
+}

@@ -1,0 +1,52 @@
+{
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro build & astro preview",
+    "astro": "astro",
+    "new-post": "node scripts/add-post.js",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
+    "lint": "eslint src --ext .astro,.ts,.tsx,.js"
+  },
+  "dependencies": {
+    "@astrojs/markdown-remark": "^7.2.1",
+    "@astrojs/mdx": "^7.0.2",
+    "@astrojs/react": "^6.0.1",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.3",
+    "@iconify-json/lucide": "^1.2.116",
+    "@iconify-json/simple-icons": "^1.2.89",
+    "@keystatic/astro": "^5.2.0",
+    "@keystatic/core": "^0.5.51",
+    "@tailwindcss/typography": "^0.5.20",
+    "@tailwindcss/vite": "^4.3.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "astro": "^7.0.7",
+    "astro-icon": "^1.1.5",
+    "fast-xml-parser": "^5.9.3",
+    "lucide-react": "^1.24.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "rehype-pretty-code": "^0.14.4",
+    "tailwindcss": "^4.3.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.63.0",
+    "@typescript-eslint/parser": "^8.63.0",
+    "eslint": "^10.6.0",
+    "eslint-plugin-astro": "^2.1.1",
+    "prettier": "^3.9.5",
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript-eslint": "^8.63.0"
+  }
+}

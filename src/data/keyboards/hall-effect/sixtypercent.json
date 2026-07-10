@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "name": "Fizz K617",
+      "price": "60-100€",
+      "brand": "Redragon",
+      "layout": ["ANSI"],
+      "features": [],
+      "links": [
+        {
+          "shop": "Redragon",
+          "url": "https://redragonshop.com/de/products/fizz-k617-magnetic-switch-keyboard?aff=5055"
+        }
+      ]
+    },
+    {
+      "name": "Fun60 Ultra",
+      "price": "60-100€",
+      "brand": "Monsgeek",
+      "layout": ["ANSI"],
+      "features": ["VIA"],
+      "links": [
+        {
+          "shop": "Akko",
+          "url": "https://akkogear.de/products/fun60-ultra-tmr-he-magnetic-keyboard?ref=Akko22"
+        },
+        {
+          "shop": "AliExpress",
+          "url": "https://s.click.aliexpress.com/e/_oECQ2bt"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "name": "ND104",
+      "brand": "Chilkey",
+      "price": "200-250€",
+      "layout": ["ISO", "ANSI"],
+      "features": ["VIA", "QMK"],
+      "links": [
+        {
+          "shop": "Monacokeys",
+          "url": "https://monacokeys.de/products/chilkey-nd104-100-aluminium-keyboard"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  type:
+    | 'note'
+    | 'abstract'
+    | 'info'
+    | 'tip'
+    | 'success'
+    | 'question'
+    | 'warning'
+    | 'failure'
+    | 'danger'
+    | 'bug'
+    | 'example'
+    | 'quote';
+  title?: string;
+}
+
+const { type, title } = Astro.props;
+
+const icons: Record<string, string> = {
+  note: 'lucide:file-text',
+  abstract: 'lucide:list',
+  info: 'lucide:info',
+  tip: 'lucide:lightbulb',
+  success: 'lucide:check-circle',
+  question: 'lucide:help-circle',
+  warning: 'lucide:alert-triangle',
+  failure: 'lucide:x-circle',
+  danger: 'lucide:zap',
+  bug: 'lucide:bug',
+  example: 'lucide:book-open',
+  quote: 'lucide:quote',
+};
+
+const titles: Record<string, string> = {
+  note: 'Note',
+  abstract: 'Abstract',
+  info: 'Info',
+  tip: 'Tip',
+  success: 'Success',
+  question: 'Question',
+  warning: 'Warning',
+  failure: 'Failure',
+  danger: 'Danger',
+  bug: 'Bug',
+  example: 'Example',
+  quote: 'Quote',
+};
+
+const iconName = icons[type] || icons.note;
+const defaultTitle = titles[type] || type;
+const displayTitle = title || defaultTitle;
+---
+
+<div class={`admonition admonition-${type}`}>
+  <div class="admonition-header">
+    <Icon name={iconName} class="admonition-icon" />
+    <span class="admonition-title">{displayTitle}</span>
+  </div>
+  <div class="admonition-content">
+    <slot />
+  </div>
+</div>
+
+<style>
+  /* Admonition styles */
+  .admonition {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid;
+    background-color: rgba(0, 247, 255, 0.03);
+    border-color: var(--color-neon-cyan);
+  }
+
+  .admonition-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .admonition-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .admonition-title {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: capitalize;
+  }
+
+  .admonition-content {
+    color: var(--color-dark-text-muted);
+  }
+
+  .admonition-content p {
+    margin-bottom: 0.5rem;
+  }
+
+  .admonition-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .prose kbd {
+    background: linear-gradient(
+      to bottom,
+      var(--color-dark-surface),
+      var(--color-dark-bg)
+    );
+    border: 1px solid var(--color-dark-border);
+    border-radius: 0.5rem;
+    border-bottom-width: 3px;
+    padding: 0.25rem 0.5rem 0.25rem;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 500;
+    box-shadow:
+      0 2px 0 rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    min-height: 1.75rem;
+  }
+</style>

@@ -1,0 +1,57 @@
+{
+  "items": [
+    {
+      "name": "Galaxy65",
+      "price": "60-100€",
+      "brand": "Epomaker",
+      "layout": ["ANSI"],
+      "features": ["VIA"],
+      "links": [
+        {
+          "shop": "Epomaker",
+          "url": "https://epomaker.de/products/epomaker-galaxy65"
+        }
+      ]
+    },
+    {
+      "name": "3068B Plus",
+      "price": "60-100€",
+      "brand": "Akko",
+      "layout": ["ISO"],
+      "features": [],
+      "links": [
+        {
+          "shop": "Akkogear",
+          "url": "https://akkogear.de/products/black-gold-3068b-plus-iso-mechanical-keyboard?ref=Akko22"
+        }
+      ]
+    },
+    {
+      "name": "AL68",
+      "price": "60-100€",
+      "brand": "Yunzii",
+      "layout": ["ANSI"],
+      "features": ["VIA"],
+      "links": [
+        {
+          "shop": "Yunzii",
+          "url": "https://www.yunzii.com/products/yunzii-al68-qmk-via-custom-mechanical-keyboard?aff=12"
+        },
+        { "shop": "Amazon", "url": "https://amzn.to/41M4tvN" }
+      ]
+    },
+    {
+      "name": "AL65",
+      "price": "100-150€",
+      "brand": "Yunzii",
+      "layout": ["ANSI"],
+      "features": ["VIA"],
+      "links": [
+        {
+          "shop": "Yunzii",
+          "url": "https://www.yunzii.com/collections/yunzii-al-series-1/products/yunzii-al65-qmk-via-custom-hollow-mechanical-keyboard?aff=12"
+        }
+      ]
+    }
+  ]
+}

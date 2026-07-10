@@ -1,0 +1,18 @@
+---
+title: 'Maus Empfehlungen'
+description: 'Testing'
+pubDate: 2025-10-12
+author:
+  - 'max-mustermann'
+  - 'anna-schmidt'
+  - 'd3rjust1n'
+tags: ['welcome', 'first-post']
+draft: false
+---
+
+import MiceFilter from '../../components/filter/MouseFilter.tsx';
+import { items as mice } from '../../data/mouse/mice.json';
+
+# Maus-Empfehlungen
+
+<MiceFilter client:load mice={mice} />

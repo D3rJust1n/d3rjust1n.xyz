@@ -8,6 +8,7 @@ import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 import mdx from '@astrojs/mdx';
 import keystatic from '@keystatic/astro';
+import netlify from '@astrojs/netlify';
 
 export default defineConfig({
   site: siteConfig.site,
@@ -36,4 +37,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  output: 'static',
+  adapter: netlify(),
 });

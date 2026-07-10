@@ -37,6 +37,29 @@
           "url": "https://monacokeys.de/products/mw-mass80-the-smartest-keyboard-with-interactive-screen"
         }
       ]
+    },
+    {
+      "name": "QK80 MK2 Prebuilt",
+      "brand": "Qwertykeys",
+      "price": "250€ +",
+      "layout": [
+        "ISO",
+        "ANSI"
+      ],
+      "features": [
+        "VIA",
+        "Bluetooth"
+      ],
+      "links": [
+        {
+          "shop": "Monacokeys",
+          "url": "https://monacokeys.de/en/products/qk80-mk2-prebuilt-80-tkl-iso-ansi-mechanical-aluminium-keyboard"
+        },
+        {
+          "shop": "Qwertykeys",
+          "url": "https://www.qwertykeys.com/products/qk80-mk2-prebuilt-mechanical-keyboard"
+        }
+      ]
     }
   ]
 }

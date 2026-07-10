@@ -11,6 +11,9 @@ draft: false
 import Admonition from '../../components/Admonition.astro';
 import KeyboardFilter from '../../components/filter/KeyboardFilter.tsx';
 import { keyboards } from '../../data/keyboards/index.ts';
+import { Image } from 'astro:assets';
+import isoVsAnsi from '../../images/blog/tastatur-empfehlungen/iso-vs-ansi.png';
+import formFaktoren from '../../images/blog/tastatur-empfehlungen/tastatur-formfaktoren.png';
 
 ## Info
 
@@ -42,10 +45,7 @@ Vor dem Kauf einer Tastatur sollte man sich überlegen welches Layout und welche
 ISO ist der europäische Standard, ANSI der Weltweite, mit beiden lassen sich aber unabhängig auch die Umlaute (ÄÖÜ) usw. schreiben
 
 <figure>
-  <img
-    src="/src/images/blog/tastatur-empfehlungen/iso-vs-ansi.png"
-    alt="iso vs ansi"
-  />
+  <Image src={isoVsAnsi} alt="iso vs ansi" />
   <figcaption>
     Quelle:{' '}
     <a
@@ -63,10 +63,7 @@ ISO ist der europäische Standard, ANSI der Weltweite, mit beiden lassen sich ab
 Es gibt unzählige Formfaktoren bei Tastaturen. Hier ist eine Übersicht welche die unterschiedlichen Formfaktoren zeigt
 
 <figure>
-  <img
-    src="/src/images/blog/tastatur-empfehlungen/tastatur-formfaktoren.png"
-    alt="formfaktoren"
-  />
+  <Image src={formFaktoren} alt="Formfaktoren" />
   <figcaption>
     Quelle:{' '}
     <a

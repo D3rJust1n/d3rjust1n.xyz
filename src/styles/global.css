@@ -34,6 +34,13 @@
 .prose a:hover {
   color: rgb(29, 78, 216);
 }
+.prose figcaption {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
 .prose figcaption a {
   display: inline;
   color: var(--color-primary-600);

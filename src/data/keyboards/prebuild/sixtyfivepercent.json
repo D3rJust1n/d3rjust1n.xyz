@@ -2,10 +2,14 @@
   "items": [
     {
       "name": "Galaxy65",
-      "price": "60-100€",
       "brand": "Epomaker",
-      "layout": ["ANSI"],
-      "features": ["VIA"],
+      "price": "60-100€",
+      "layout": [
+        "ANSI"
+      ],
+      "features": [
+        "VIA"
+      ],
       "links": [
         {
           "shop": "Epomaker",
@@ -15,9 +19,11 @@
     },
     {
       "name": "3068B Plus",
-      "price": "60-100€",
       "brand": "Akko",
-      "layout": ["ISO"],
+      "price": "60-100€",
+      "layout": [
+        "ISO"
+      ],
       "features": [],
       "links": [
         {
@@ -28,28 +34,61 @@
     },
     {
       "name": "AL68",
-      "price": "60-100€",
       "brand": "Yunzii",
-      "layout": ["ANSI"],
-      "features": ["VIA"],
+      "price": "60-100€",
+      "layout": [
+        "ANSI"
+      ],
+      "features": [
+        "VIA"
+      ],
       "links": [
         {
           "shop": "Yunzii",
           "url": "https://www.yunzii.com/products/yunzii-al68-qmk-via-custom-mechanical-keyboard?aff=12"
         },
-        { "shop": "Amazon", "url": "https://amzn.to/41M4tvN" }
+        {
+          "shop": "Amazon",
+          "url": "https://amzn.to/41M4tvN"
+        }
       ]
     },
     {
       "name": "AL65",
-      "price": "100-150€",
       "brand": "Yunzii",
-      "layout": ["ANSI"],
-      "features": ["VIA"],
+      "price": "100-150€",
+      "layout": [
+        "ANSI"
+      ],
+      "features": [
+        "VIA"
+      ],
       "links": [
         {
           "shop": "Yunzii",
           "url": "https://www.yunzii.com/collections/yunzii-al-series-1/products/yunzii-al65-qmk-via-custom-hollow-mechanical-keyboard?aff=12"
+        }
+      ]
+    },
+    {
+      "name": "Qk65 Mk3 Prebuilt",
+      "brand": "Qwertykeys",
+      "price": "250€ +",
+      "layout": [
+        "ANSI"
+      ],
+      "features": [
+        "VIA",
+        "Bluetooth"
+      ],
+      "links": [
+        {
+          "shop": "Qwertykeys",
+          "url": "https://www.qwertykeys.com/products/qk65-mk3-prebuilt-mechanical-keyboard?variant=48449614217459"
+        },
+        {
+          "shop": "Divinikey",
+          "url": "https://divinikey.com/products/qwertykeys-qk65mk3-keyboard"
         }
       ]
     }

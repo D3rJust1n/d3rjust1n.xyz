@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "name": "SK75 TMR",
+      "brand": "Womier",
+      "price": "100-150€",
+      "layout": [
+        "ANSI"
+      ],
+      "features": [
+        "Bluetooth"
+      ],
+      "links": [
+        {
+          "shop": "Maxgaming",
+          "url": "https://www.maxgaming.gg/de/gaming-tastatur/womier-keyboard-sk75-tmr-he-kabellose-tastatur-schwarz"
+        },
+        {
+          "shop": "Womier",
+          "url": "https://womierkeyboard.com/collections/aluminum-keyboard/products/womier-sk75-tmr-magnetic-keyboard"
+        },
+        {
+          "shop": "Amazon",
+          "url": "https://www.amazon.de/LQXQ-Gaming-Tastatur-Hall-Effekt-Mechanische-Schalter-Tastaturen/dp/B0FV85GY1W/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&s=computers&sr=1-1"
+        }
+      ]
+    }
+  ]
+}

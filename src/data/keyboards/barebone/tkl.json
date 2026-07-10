@@ -1,3 +1,27 @@
 {
-  "items": []
+  "items": [
+    {
+      "name": "Neo80 CU",
+      "brand": "Neo Studios",
+      "price": "250€ +",
+      "layout": [
+        "ISO",
+        "ANSI"
+      ],
+      "features": [
+        "VIA",
+        "Bluetooth"
+      ],
+      "links": [
+        {
+          "shop": "Monacokeys",
+          "url": "https://monacokeys.de/en/products/neo80cu-80-tkl-aluminium-custom-mechanical-keyboard-kit"
+        },
+        {
+          "shop": "Qwertykeys",
+          "url": "https://www.qwertykeys.com/products/neo80-cu-custom-mechanical-keyboard"
+        }
+      ]
+    }
+  ]
 }

@@ -2,9 +2,12 @@
   "items": [
     {
       "name": "F75",
-      "price": "60-100€",
       "brand": "Aula",
-      "layout": ["ISO", "ANSI"],
+      "price": "60-100€",
+      "layout": [
+        "ISO",
+        "ANSI"
+      ],
       "features": [],
       "links": [
         {
@@ -15,10 +18,14 @@
     },
     {
       "name": "5075B Plus",
-      "price": "60-100€",
       "brand": "Akko",
-      "layout": ["ISO"],
-      "features": ["VIA"],
+      "price": "60-100€",
+      "layout": [
+        "ISO"
+      ],
+      "features": [
+        "VIA"
+      ],
       "links": [
         {
           "shop": "AliExpress",
@@ -28,15 +35,45 @@
     },
     {
       "name": "AL80",
-      "price": "60-100€",
       "brand": "Yunzii",
-      "layout": ["ANSI"],
-      "features": ["VIA"],
+      "price": "60-100€",
+      "layout": [
+        "ANSI"
+      ],
+      "features": [
+        "VIA"
+      ],
       "links": [
-        { "shop": "Amazon", "url": "https://amzn.to/4myIZeA" },
+        {
+          "shop": "Amazon",
+          "url": "https://amzn.to/4myIZeA"
+        },
         {
           "shop": "Yunzii",
           "url": "https://www.yunzii.com/products/yunzii-al80-qmk-via-aluminum-lcd-mechanical-keyboard?aff=12"
+        }
+      ]
+    },
+    {
+      "name": "Neo75 Prebuilt",
+      "brand": "Neo Studios",
+      "price": "150-200€",
+      "layout": [
+        "ISO",
+        "ANSI"
+      ],
+      "features": [
+        "VIA",
+        "Bluetooth"
+      ],
+      "links": [
+        {
+          "shop": "Monacokeys",
+          "url": "https://monacokeys.de/en/products/neo75-prebuilt-75-mechanical-aluminium-keyboard-kit"
+        },
+        {
+          "shop": "Qwertykeys",
+          "url": "https://www.qwertykeys.com/products/neo98-neo75-prebuilt-mechanical-keyboard?variant=48833345880307"
         }
       ]
     }

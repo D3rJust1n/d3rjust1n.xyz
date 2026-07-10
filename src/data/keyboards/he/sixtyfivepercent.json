@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "name": "Neo65 Sonic HE+",
+      "brand": "Neo Studios",
+      "price": "100-150€",
+      "layout": [
+        "ISO",
+        "ANSI"
+      ],
+      "features": [],
+      "links": [
+        {
+          "shop": "Monacokeys",
+          "url": "https://monacokeys.de/en/products/neo65-sonic-he-65-aluminium-hall-effect-keyboard?variant=53577502622029"
+        },
+        {
+          "shop": "Qwertykeys",
+          "url": "https://www.qwertykeys.com/products/neo65-sonic-he-hall-effect-custom-keyboard"
+        }
+      ]
+    }
+  ]
+}

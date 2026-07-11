@@ -67,7 +67,7 @@ const mouseSchema = fields.array(
         { label: '200-250€', value: '200-250€'},
         { label: '250€ +', value: '250€ +'}
       ],
-      defaultValue: '100-150€',
+      defaultValue: '60-100€',
     }),
     links: fields.array(
       fields.object({

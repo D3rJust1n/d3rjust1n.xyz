@@ -1,18 +1,59 @@
 ---
 title: 'Maus Empfehlungen'
-description: 'Testing'
-pubDate: 2025-10-12
-author:
-  - 'max-mustermann'
-  - 'anna-schmidt'
-  - 'd3rjust1n'
-tags: ['welcome', 'first-post']
+description: 'Maus Empfehlungen von D3rJust1n, HardwareNetzwerk und shu'
+pubDate: 2026-07-10
+updatedDate: 2026-07-11
+author: ['d3rjust1n', 'shu', 'hardware-netzwerk']
+tags: ['beratung', 'peripherie', 'maus', 'empfehlungen']
 draft: false
 ---
 
+import Admonition from '../../components/Admonition.astro';
 import MiceFilter from '../../components/filter/MouseFilter.tsx';
 import { items as mice } from '../../data/mouse/mice.json';
+import { Image } from 'astro:assets';
+import mouseGrips from '../../images/blog/maus-empfehlungen/mouse-grips.png';
 
-# Maus-Empfehlungen
+## Info
 
+Willkommen zur Maus-Empfehlungsliste von Hardware Netzwerk und Skio928. Diese Liste bietet eine umfassende Übersicht und Empfehlungen zu verschiedenen Mäusen für jeden Grip und jedes Budget.
+Sie ist in drei Hauptkategorien unterteilt:
+* Palm Grip: Kurz erklärt, die gesamte Hand liegt flach auf der Maus, sorgt für Komfort und Kontrolle
+geeignet für: Große bis mittelgroße Hände
+* Claw Grip: Kurz erklärt, die Hand wölbt sich wie eine Klaue, die Fingerspitzen und Handballen berühren die Maus. Ideal für schnelle Klicks
+geeignet für: Kleine bis mittelgroße Hände
+* Fingertip Grip: Kurz erklärt, nur die Fingerspitzen berühren die Maus, maximale Beweglichkeit und Geschwindigkeit.
+geeignet für: Kleine bis große Hände, abhängig von der Mausgröße
+
+<Admonition type="info" title="Info zu den Empfehlungen">
+  Die Listen werden in unregelmäßigen Abständen aktualisiert.
+  So kann es passieren, dass manche Produkte nicht mehr verfügbar sind oder neue Produkte fehlen.
+
+  Sollte euch so etwas auffallen könnt ihr mir dies sehr gerne über [GitHub als Issue](https://github.com/D3rJust1n/d3rjust1n.xyz/issues) oder auf meinem [Discord Server](https://d3r.eu/dc) im Feedback Forum mitteilen
+</Admonition>
+
+Hier ein Bild von den unterschiedlichen Grip Arten
+<figure>
+  <Image src={mouseGrips} alt="Maus Grips" />
+  <figcaption>
+    Quelle:{' '}
+    <a
+      href="https://www.tweaktown.com/guides/7065/choosing-mouse-settings-more-part/index.html"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Tweaktown
+    </a>
+  </figcaption>
+</figure>
+
+## Ref-Links und Rabatt-Codes
+<Admonition type="tip" title="Ref-Links und Rabatt-Codes">
+  Mit diesen Rabatt-Codes kannst du bei den gelisteten Shops sparen
+
+  * [Dornfinger](https://dornfinger.com), 5 % Rabatt mit Code **hwnw**
+  * [MaxGaming](https://www.maxgaming.gg/?linkId=lp_042351&sourceId=hwnw&tenantId=maxfps)
+  * [Pulsar EU](https://eu.pulsar.gg/?linkId=lp_416202&sourceId=hwnw&tenantId=maxfps)
+</Admonition>
+## Empfehlungen
 <MiceFilter client:load mice={mice} />

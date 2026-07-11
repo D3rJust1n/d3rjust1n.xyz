@@ -71,13 +71,6 @@ const FilterableMice = ({ mice = [] }) => {
 
   return (
     <div className="max-w-7xl mx-auto">
-      <div className="mb-8">
-        <h1 className="text-4xl font-bold mb-2">Maus-Empfehlungen</h1>
-        <p className="opacity-70">
-          Finde die perfekte Maus für deine Bedürfnisse
-        </p>
-      </div>
-
       {/* Search Bar */}
       <div className="mb-6 relative">
         <Search

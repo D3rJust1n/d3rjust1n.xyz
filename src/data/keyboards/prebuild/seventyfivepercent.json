@@ -55,9 +55,27 @@
       ]
     },
     {
-      "name": "Neo75 Prebuilt",
-      "brand": "Neo Studios",
-      "price": "150-200€",
+      "name": "RD75 Pro",
+      "brand": "Womier",
+      "price": "100-150€",
+      "layout": [
+        "ANSI"
+      ],
+      "features": [
+        "VIA",
+        "Bluetooth"
+      ],
+      "links": [
+        {
+          "shop": "Amazon",
+          "url": "https://www.amazon.de/LQXQ-Tastatur-Aluminium-Mechanische-Swappable/dp/B0DL8ZPB24/ref=sr_1_3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&s=computers&sr=1-3"
+        }
+      ]
+    },
+    {
+      "name": "SK75",
+      "brand": "Womier",
+      "price": "100-150€",
       "layout": [
         "ISO",
         "ANSI"
@@ -68,12 +86,48 @@
       ],
       "links": [
         {
-          "shop": "Monacokeys",
-          "url": "https://monacokeys.de/en/products/neo75-prebuilt-75-mechanical-aluminium-keyboard-kit"
+          "shop": "Amazon",
+          "url": "https://www.amazon.de/LQXQ-Aluminium-Mechanical-Pre-lubed-Swappable/dp/B0F7RJKBW9/ref=sr_1_7?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&s=computers&sr=1-7"
+        }
+      ]
+    },
+    {
+      "name": "SK71 Pro",
+      "brand": "Womier",
+      "price": "60-100€",
+      "layout": [
+        "ANSI",
+        "ISO"
+      ],
+      "features": [
+        "VIA"
+      ],
+      "links": [
+        {
+          "shop": "Amazon",
+          "url": "https://www.amazon.de/LQXQ-Tastatur-Aluminium-Mechanische-Swappable/dp/B0FRDZQ237/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&s=computers&sr=1-1"
         },
         {
-          "shop": "Qwertykeys",
-          "url": "https://www.qwertykeys.com/products/neo98-neo75-prebuilt-mechanical-keyboard?variant=48833345880307"
+          "shop": "Womier",
+          "url": "https://womierkeyboard.com/collections/aluminum-keyboard/products/womier-sk71-pro"
+        }
+      ]
+    },
+    {
+      "name": "NUT75",
+      "brand": "Weikav",
+      "price": "100-150€",
+      "layout": [
+        "ANSI"
+      ],
+      "features": [
+        "VIA",
+        "Bluetooth"
+      ],
+      "links": [
+        {
+          "shop": "Weikav",
+          "url": "https://weikav.com/product/weikav-nut75/"
         }
       ]
     }

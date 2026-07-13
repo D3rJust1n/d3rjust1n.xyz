@@ -45,10 +45,11 @@ Thanks to larry-xue for his [Astro Zen Blog Template](https://github.com/larry-x
 This blog is based on the Astro Zen Blog Template, with a few customizations and additional features for my use case.
 
 Also thanks to Jojodicus for his portfolio [dittrich.pro](https://github.com/Jojodicus/dittrich.pro/)  
-The Admonition Component in `src/components` is from his Repo
+The “Admonition” component in `src/components` and the ToC feature come from his repo.
 
 ## 🤖 AI-Assisted Development
 
 This project builds on the base template (see Credits above).
-The custom filter components in `src/components/filter/` were built with the help of AI tools (Claude),
-while other customizations and features were made by me.
+The custom filter components in `src/components/filter/` were created using AI tools (Claude),
+while I implemented other customizations and features myself.  
+A few adjustments were made to the Table of Content feature using AI as well.

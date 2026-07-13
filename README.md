@@ -1,43 +1,51 @@
-# Astro Starter Kit: Minimal
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5a7f54ca-6d7d-4a59-a469-7c01ffffc0e8/deploy-status)](https://app.netlify.com/projects/d3rjust1n/deploys)
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
+# [d3rjust1n.xyz](https://d3rjust1n.xyz/)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+My blog website built with Astro 7.
 
-## 🚀 Project Structure
+## Tech Stack
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
+- **Framework**: Astro
+- **Icons**: simple-icons, astro-icon (lucide)
+- **Collections**: Astro content collections
+- **Integrations**: sitemap, mdx, keystatic
 
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
+| Command                | Action                                           |
+|:-----------------------|:-------------------------------------------------|
+| `pnpm install`         | Installs dependencies                            |
+| `pnpm dev`             | Starts local dev server at `127.0.0.1:4321`      |
 | `pnpm build`           | Build your production site to `./dist/`          |
 | `pnpm preview`         | Preview your build locally, before deploying     |
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 🚀 Project Structure
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```text
+src/
+├── components/         # UI components
+│   └──filter/          # Custom filter for some blog posts
+├── content/            # Content Collections
+├── data/               # data for recommendations
+├── images/             # images for blog posts
+├── layouts/            # Base layouts
+├── pages/              # File-based routing
+├── styles/             # Global styles
+└── utils/              # Some utils for posts
+```
+
+## Credits
+
+Thanks to larry-xue for his [Astro Zen Blog Template](https://github.com/larry-xue/astro-zen-blog)
+This blog is based on the Astro Zen Blog Template, with a few customizations and additional features for my use case.
+
+## 🤖 AI-Assisted Development
+
+This project builds on the base template (see Credits above).
+The custom filter components in `src/components/filter/` were built with the help of AI tools (Claude),
+while other customizations and features were made by me.

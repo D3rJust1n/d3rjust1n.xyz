@@ -44,6 +44,9 @@ src/
 Thanks to larry-xue for his [Astro Zen Blog Template](https://github.com/larry-xue/astro-zen-blog)  
 This blog is based on the Astro Zen Blog Template, with a few customizations and additional features for my use case.
 
+Also thanks to Jojodicus for his portfolio [dittrich.pro](https://github.com/Jojodicus/dittrich.pro/)  
+The Admonition Component in `src/components` is from his Repo
+
 ## 🤖 AI-Assisted Development
 
 This project builds on the base template (see Credits above).

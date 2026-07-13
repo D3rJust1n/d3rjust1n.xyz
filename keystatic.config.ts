@@ -223,7 +223,7 @@ export default config({
     // Numpads
     numpads: singleton({
       label: 'Numpads',
-      path: 'src/data//keyboards/numpad',
+      path: 'src/data/keyboards/numpad/numpad',
       format: { data: 'json' },
       schema: { items: numpadSchema}
     })

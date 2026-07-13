@@ -454,29 +454,35 @@ const FilterableKeyboards = ({ keyboards: keyboardsProp = [] }) => {
                   <span className="font-medium text-gray-200">{kb.brand}</span>
                 </div>
 
-                <div className="flex items-center gap-2">
-                  <span className="text-gray-400">Größe:</span>
-                  <span className="font-medium text-gray-200">{kb.size}</span>
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <span className="text-gray-400">Layout:</span>
-                  <div className="flex gap-1.5">
-                    {(Array.isArray(kb.layout) ? kb.layout : [kb.layout]).map(
-                      (layout, i) => (
-                        <span
-                          key={i}
-                          className="font-medium text-gray-200 text-xs px-2 py-1 rounded"
-                          style={{
-                            backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                          }}
-                        >
-                          {layout}
-                        </span>
-                      )
-                    )}
+                {kb.size && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-gray-400">Größe:</span>
+                    <span className="font-medium text-gray-200">{kb.size}</span>
                   </div>
-                </div>
+                )}
+
+                {(Array.isArray(kb.layout) ? kb.layout : [kb.layout]).filter(
+                  Boolean
+                ).length > 0 && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-gray-400">Layout:</span>
+                    <div className="flex gap-1.5">
+                      {(Array.isArray(kb.layout) ? kb.layout : [kb.layout])
+                        .filter(Boolean)
+                        .map((layout, i) => (
+                          <span
+                            key={i}
+                            className="font-medium text-gray-200 text-xs px-2 py-1 rounded"
+                            style={{
+                              backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                            }}
+                          >
+                            {layout}
+                          </span>
+                        ))}
+                    </div>
+                  </div>
+                )}
 
                 <div className="pt-2 min-h-8">
                   {kb.features && kb.features.length > 0 && (

@@ -41,7 +41,7 @@ src/
 
 ## Credits
 
-Thanks to larry-xue for his [Astro Zen Blog Template](https://github.com/larry-xue/astro-zen-blog)
+Thanks to larry-xue for his [Astro Zen Blog Template](https://github.com/larry-xue/astro-zen-blog)  
 This blog is based on the Astro Zen Blog Template, with a few customizations and additional features for my use case.
 
 ## 🤖 AI-Assisted Development

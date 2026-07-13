@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import 'admonitions.css';
 @plugin "@tailwindcss/typography";
 
 @theme {
@@ -25,14 +26,14 @@
 .prose h2,
 .prose h3,
 .prose h4 {
-  color: rgb(17, 24, 39);
+  color: rgb(243, 244, 246);
   font-weight: 700;
 }
 .prose a {
-  color: rgb(37, 99, 235);
+  color: var(--color-primary-400);
 }
 .prose a:hover {
-  color: rgb(29, 78, 216);
+  color: var(--color-primary-300);
 }
 .prose figcaption {
   display: flex;
@@ -40,7 +41,6 @@
   flex-wrap: wrap;
   gap: 0.35rem;
 }
-
 .prose figcaption a {
   display: inline;
   color: var(--color-primary-600);
@@ -56,30 +56,30 @@
   font-weight: 400;
 }
 
-/* Typography - Dark Mode */
-.dark .prose {
-  color: rgb(229, 231, 235);
-}
-.dark .prose h1,
-.dark .prose h2,
-.dark .prose h3,
-.dark .prose h4 {
-  color: rgb(243, 244, 246);
-}
-.dark .prose a {
-  color: rgb(96, 165, 250);
-}
-.dark .prose a:hover {
-  color: rgb(147, 197, 253);
-}
-.dark .prose code {
-  color: rgb(243, 244, 246);
-  background-color: rgb(31, 41, 55);
-}
-.dark .prose blockquote {
-  color: rgb(229, 231, 235);
-  border-left-color: rgb(75, 85, 99);
-}
+/*!* Typography - Dark Mode *!*/
+/*.dark .prose {*/
+/*  color: rgb(229, 231, 235);*/
+/*}*/
+/*.dark .prose h1,*/
+/*.dark .prose h2,*/
+/*.dark .prose h3,*/
+/*.dark .prose h4 {*/
+/*  color: rgb(243, 244, 246);*/
+/*}*/
+/*.dark .prose a {*/
+/*  color: rgb(96, 165, 250);*/
+/*}*/
+/*.dark .prose a:hover {*/
+/*  color: rgb(147, 197, 253);*/
+/*}*/
+/*.dark .prose code {*/
+/*  color: rgb(243, 244, 246);*/
+/*  background-color: rgb(31, 41, 55);*/
+/*}*/
+/*.dark .prose blockquote {*/
+/*  color: rgb(229, 231, 235);*/
+/*  border-left-color: rgb(75, 85, 99);*/
+/*}*/
 /* TOC styles */
 details summary {
   list-style: none;

@@ -9,6 +9,7 @@ import tailwindcss from '@tailwindcss/vite';
 import mdx from '@astrojs/mdx';
 import keystatic from '@keystatic/astro';
 import netlify from '@astrojs/netlify';
+import { remarkExtractTOC } from './src/utils/remark-extract-toc.ts';
 
 export default defineConfig({
   site: siteConfig.site,
@@ -18,6 +19,7 @@ export default defineConfig({
 
   markdown: {
     processor: unified({
+      remarkPlugins: [remarkExtractTOC],
       rehypePlugins: [
         [
           rehypePrettyCode,

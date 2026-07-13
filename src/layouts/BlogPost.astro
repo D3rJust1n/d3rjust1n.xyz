@@ -3,12 +3,14 @@ import BaseLayout from './BaseLayout.astro';
 import PostDate from '../components/PostDate.astro';
 import PostTags from '../components/PostTags.astro';
 import type { CollectionEntry } from 'astro:content';
+import type { MarkdownHeading } from 'astro';
 
 interface Props {
   post: CollectionEntry<'blog'>;
+  headings?: MarkdownHeading[];
 }
 
-const { post } = Astro.props;
+const { post, headings } = Astro.props;
 const { title, pubDate, updatedDate, tags, image } = post.data;
 ---
 
@@ -36,6 +38,57 @@ const { title, pubDate, updatedDate, tags, image } = post.data;
       </div>
       {tags && <PostTags tags={tags} />}
     </header>
+    {
+      headings && headings.length > 0 && (
+        <div class="mb-8 p-6 rounded-lg">
+          <details class="toc-details w-full">
+            <summary class="cursor-pointer font-semibold text-lg mb-2 flex items-center gap-2 w-full text-primary-600 dark:text-primary-400 select-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 transition-transform"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+              Inhaltsverzeichnis
+            </summary>
+            <div class="toc-container w-full">
+              <div class="toc-list">
+                <ul class="space-y-2 pt-2">
+                  {headings
+                    .filter((h) => h.depth <= 3)
+                    .map((heading) => (
+                      <li
+                        class={
+                          heading.depth === 1
+                            ? ''
+                            : heading.depth === 2
+                              ? 'ml-4'
+                              : 'ml-8'
+                        }
+                      >
+                       <a
+                        href={`#${heading.slug}`}
+                        class={`${heading.depth === 1 ? 'text-gray-900 dark:text-gray-100' : 'text-gray-600 dark:text-gray-400'} ${heading.depth === 1 ? 'text-lg' : heading.depth === 2 ? 'text-base' : 'text-sm'} hover:text-primary-600 dark:hover:text-primary-400 transition-colors block py-1`}
+                        >
+                        {heading.text}
+                        </a>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      )
+    }
     <div
       class="prose prose-lg dark:prose-invert
       prose-headings:text-gray-900 dark:prose-headings:text-gray-100

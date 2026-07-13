@@ -80,3 +80,39 @@
   color: rgb(229, 231, 235);
   border-left-color: rgb(75, 85, 99);
 }
+/* TOC styles */
+details summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details .toc-container {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 0.3s ease-out;
+}
+
+details[open] .toc-container {
+  grid-template-rows: 1fr;
+}
+
+details .toc-list {
+  min-height: 0;
+  overflow: hidden;
+  padding-top: 0.5rem;
+}
+
+details[open] summary svg {
+  transform: rotate(90deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  details .toc-container {
+    transition: none;
+  }
+}

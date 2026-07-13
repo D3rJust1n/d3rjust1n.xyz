@@ -11,7 +11,6 @@
     "build": "astro build",
     "preview": "astro build & astro preview",
     "astro": "astro",
-    "new-post": "node scripts/add-post.js",
     "format": "prettier --write src",
     "format:check": "prettier --check src",
     "lint": "eslint src --ext .astro,.ts,.tsx,.js"

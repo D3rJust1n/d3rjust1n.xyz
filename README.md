@@ -45,7 +45,7 @@ Thanks to larry-xue for his [Astro Zen Blog Template](https://github.com/larry-x
 This blog is based on the Astro Zen Blog Template, with a few customizations and additional features for my use case.
 
 Also thanks to Jojodicus for his portfolio [dittrich.pro](https://github.com/Jojodicus/dittrich.pro/)  
-The “Admonition” component in `src/components` and the ToC feature come from his repo.
+The Admonition component in `src/components` and, the imprint feature and the ToC feature come from his repo.
 
 ## 🤖 AI-Assisted Development
 

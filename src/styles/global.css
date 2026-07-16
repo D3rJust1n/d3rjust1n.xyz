@@ -35,6 +35,12 @@
 .prose a:hover {
   color: var(--color-primary-300);
 }
+.prose figure {
+  margin-bottom: 0.75em;
+}
+.prose figure + h2 {
+  margin-top: 0.75em;
+}
 .prose figcaption {
   display: flex;
   align-items: baseline;
@@ -47,6 +53,14 @@
 }
 .prose figcaption a:hover {
   color: var(--color-primary-500);
+}
+figure figcaption a,
+figure figcaption a p {
+  color: var(--color-primary-400);
+}
+figure figcaption a:hover,
+figure figcaption a:hover p {
+  color: var(--color-primary-300);
 }
 .prose code {
   color: rgb(31, 41, 55);
@@ -80,39 +94,3 @@
 /*  color: rgb(229, 231, 235);*/
 /*  border-left-color: rgb(75, 85, 99);*/
 /*}*/
-/* TOC styles */
-details summary {
-  list-style: none;
-  cursor: pointer;
-}
-
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-details .toc-container {
-  display: grid;
-  grid-template-rows: 0fr;
-  overflow: hidden;
-  transition: grid-template-rows 0.3s ease-out;
-}
-
-details[open] .toc-container {
-  grid-template-rows: 1fr;
-}
-
-details .toc-list {
-  min-height: 0;
-  overflow: hidden;
-  padding-top: 0.5rem;
-}
-
-details[open] summary svg {
-  transform: rotate(90deg);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  details .toc-container {
-    transition: none;
-  }
-}

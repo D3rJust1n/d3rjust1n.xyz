@@ -8,15 +8,13 @@ Justin Hesmer
 Pyrmonter Straße 32  
 31812 Bad Pyrmont
 
-Kontakt:  
+## Kontakt:  
 E-Mail: [contact@d3rjust1n.xyz](mailto:contact@d3rjust1n.xyz)
 
-Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:  
+## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:  
 Justin Hesmer  
 Pyrmonter Straße 32  
 31812 Bad Pyrmont
-
-## Haftungsausschluss:
 
 ### Haftung für Inhalte
 

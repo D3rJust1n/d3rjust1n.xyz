@@ -6,13 +6,11 @@ const inprintContent = imprint[0];
 const { Content } = await render(inprintContent);
 ---
 
-<Layout title="Impressum">
+<Layout title="Impressum" noindex={true}>
   <section class="py-16">
     <div class="mx-auto max-w-4xl px-4">
       <h1 class="text-4xl font-bold mb-8 text-white">Impressum</h1>
-      <div
-        class="prose prose-invert prose-lg max-w-3xl mx-auto px-4 py-8 text-white [&_h2]:text-white [&_h3]:text-white"
-      >
+      <div class="prose prose-invert max-w-none">
         <Content />
       </div>
     </div>

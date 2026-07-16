@@ -7,11 +7,13 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  noindex?: boolean
 }
 
 const {
   title,
   description = 'A minimal blog focused on excellent reading experience',
+  noindex = false
 } = Astro.props;
 ---
 
@@ -24,6 +26,7 @@ const {
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    {noindex && <meta name="robots" content="noindex" />}
     <ClientRouter />
   </head>
   <body class="min-h-screen dark:bg-gray-900">

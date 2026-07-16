@@ -1,7 +1,10 @@
 {
   "d3rjust1n": {
     "id": "d3rjust1n",
-    "name": "D3rJust1n"
+    "name": "D3rJust1n",
+    "bio": "Schreibt über Hardware und Netzwerke.",
+    "website": "https://example.com",
+    "avatar": "d3rjust1n.png"
   },
   "hardware-netzwerk": {
     "id": "hardware-netzwerk",

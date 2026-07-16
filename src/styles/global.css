@@ -19,7 +19,7 @@
 /* Typography - Light Mode */
 .prose {
   max-width: 65ch;
-  color: rgb(31, 41, 55);
+  /*color: rgb(31, 41, 55);*/
   line-height: 1.75;
 }
 .prose h1,

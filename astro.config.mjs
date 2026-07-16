@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import rehypePrettyCode from 'rehype-pretty-code';
+import rehypeExternalLinks from 'rehype-external-links';
 import { siteConfig } from './src/config';
 import { unified } from '@astrojs/markdown-remark';
 import sitemap from '@astrojs/sitemap';
@@ -32,6 +33,10 @@ export default defineConfig({
             },
           },
         ],
+        [
+          rehypeExternalLinks,
+          { target: '_blank', rel: 'noopener noreferrer' },
+        ]
       ],
     }),
   },

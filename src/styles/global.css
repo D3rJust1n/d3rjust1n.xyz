@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import 'admonitions.css';
+@import 'toc.css';
 @plugin "@tailwindcss/typography";
 
 @theme {

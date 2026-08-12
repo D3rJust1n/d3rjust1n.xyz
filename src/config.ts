@@ -1,23 +1,12 @@
 import type { PostFilter } from './utils/posts';
+import type { SocialLinks } from './utils/social';
 
 export interface SiteConfig {
   title: string;
   slogan: string;
   description?: string;
   site: string;
-  social: {
-    github?: string;
-    codeberg?: string;
-    email?: string;
-    youtube?: string;
-    anilist?: string;
-    mastodon?: string;
-    bsky?: string;
-    twitch?: string;
-    discord?: string;
-    instagram?: string;
-    rss?: boolean;
-  };
+  social: SocialLinks;
   homepage: PostFilter;
   search?: boolean;
 }

@@ -1,13 +1,20 @@
 ---
 import { siteConfig } from '../config';
 import { Icon } from 'astro-icon/components';
+import type { SocialLinks } from '../utils/social';
+
+interface Props {
+  social?: SocialLinks;
+}
+
+const { social = siteConfig.social } = Astro.props;
 ---
 
 <div class="flex gap-4">
   {
-    siteConfig.social.github && (
+    social.github && (
       <a
-        href={siteConfig.social.github}
+        href={social.github}
         target="_blank"
         rel="noopener noreferrer"
         class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
@@ -18,9 +25,9 @@ import { Icon } from 'astro-icon/components';
     )
   }
   {
-    siteConfig.social.email && (
+    social.email && (
       <a
-        href={`mailto:${siteConfig.social.email}`}
+        href={`mailto:${social.email}`}
         class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
         aria-label="Email"
       >
@@ -29,9 +36,9 @@ import { Icon } from 'astro-icon/components';
     )
   }
   {
-    siteConfig.social.youtube && (
+    social.youtube && (
       <a
-        href={siteConfig.social.youtube}
+        href={social.youtube}
         target="_blank"
         rel="noopener noreferrer"
         class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
@@ -42,9 +49,9 @@ import { Icon } from 'astro-icon/components';
     )
   }
   {
-    siteConfig.social.anilist && (
+    social.anilist && (
       <a
-        href={siteConfig.social.anilist}
+        href={social.anilist}
         target="_blank"
         rel="noopener noreferrer"
         class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
@@ -55,9 +62,9 @@ import { Icon } from 'astro-icon/components';
     )
   }
   {
-    siteConfig.social.codeberg && (
+    social.codeberg && (
       <a
-        href={siteConfig.social.codeberg}
+        href={social.codeberg}
         target="_blank"
         rel="noopener noreferrer"
         class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
@@ -68,9 +75,9 @@ import { Icon } from 'astro-icon/components';
     )
   }
   {
-    siteConfig.social.mastodon && (
+    social.mastodon && (
       <a
-        href={siteConfig.social.mastodon}
+        href={social.mastodon}
         target="_blank"
         rel="noopener noreferrer me"
         class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
@@ -81,9 +88,9 @@ import { Icon } from 'astro-icon/components';
     )
   }
   {
-    siteConfig.social.bsky && (
+    social.bsky && (
       <a
-        href={siteConfig.social.bsky}
+        href={social.bsky}
         target="_blank"
         rel="noopener noreferrer"
         class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
@@ -94,9 +101,9 @@ import { Icon } from 'astro-icon/components';
     )
   }
   {
-    siteConfig.social.twitch && (
+    social.twitch && (
       <a
-        href={siteConfig.social.twitch}
+        href={social.twitch}
         target="_blank"
         rel="noopener noreferrer"
         class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
@@ -107,9 +114,9 @@ import { Icon } from 'astro-icon/components';
     )
   }
   {
-    siteConfig.social.discord && (
+    social.discord && (
       <a
-        href={siteConfig.social.discord}
+        href={social.discord}
         target="_blank"
         rel="noopener noreferrer"
         class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
@@ -120,9 +127,9 @@ import { Icon } from 'astro-icon/components';
     )
   }
   {
-    siteConfig.social.instagram && (
+    social.instagram && (
       <a
-        href={siteConfig.social.instagram}
+        href={social.instagram}
         target="_blank"
         rel="noopener noreferrer"
         class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
@@ -133,13 +140,39 @@ import { Icon } from 'astro-icon/components';
     )
   }
   {
-    siteConfig.social.rss && (
+    social.rss && (
       <a
         href="/rss.xml"
         class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
         aria-label="RSS Feed"
       >
         <Icon name="simple-icons:rss" class="w-6 h-6" />
+      </a>
+    )
+  }
+  {
+    social.fluxer && (
+      <a
+        href={social.fluxer}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        aria-label="Fluxer"
+      >
+        <Icon name="simple-icons:fluxer" class="w-6 h-6" />
+      </a>
+    )
+  }
+  {
+    social.website && (
+      <a
+        href={social.website}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        aria-label="Website"
+      >
+        <Icon name="lucide:globe" class="w-6 h-6" />
       </a>
     )
   }

@@ -1,0 +1,30 @@
+---
+import { getAuthors } from '../utils/authors.ts';
+
+interface Props {
+  authorId: string | string[];
+}
+
+const { authorId } = Astro.props;
+const authors = getAuthors(authorId);
+---
+
+{
+  authors.length > 0 ? (
+    <span class="author-info inline text-gray-600 dark:text-gray-400">
+      {authors.map((a, i) => (
+        <>
+          <a
+            href={`/authors/${a.id}`}
+            class="hover:text-primary-600 dark:hover:text-primary-400 hover:underline"
+          >
+            {a.name}
+          </a>
+          {i < authors.length - 1 && ', '}
+        </>
+      ))}
+    </span>
+  ) : (
+    <span class="text-gray-600 dark:text-gray-400">Unbekannter Autor</span>
+  )
+}

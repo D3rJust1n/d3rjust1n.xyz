@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogPreview from '../../components/BlogPreview.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import { authors, getAuthor, getAvatar } from '../../utils/authors';
+import SocialLinks from '../../components/SocialLinks.astro';
+
+export async function getStaticPaths() {
+  return Object.keys(authors).map((id) => ({ params: { id } }));
+}
+
+const { id } = Astro.params;
+const author = getAuthor(id!);
+
+if (!author) {
+  return Astro.redirect('/404');
+}
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const posts = allPosts
+  .filter((post) => {
+    const postAuthors = Array.isArray(post.data.author)
+      ? post.data.author
+      : [post.data.author];
+    return postAuthors.includes(id);
+  })
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout title={author.name}>
+  <div class="max-w-4xl mx-auto px-4 py-12">
+    <header class="mb-12 flex items-start gap-4">
+      {
+        getAvatar(author.avatar) ? (
+          <Image
+            src={getAvatar(author.avatar)!}
+            alt={author.name}
+            width={80}
+            height={80}
+            class="w-20 h-20 rounded-full object-cover"
+          />
+        ) : (
+          <div class="w-20 h-20 rounded-full bg-primary-600 flex items-center justify-center text-white text-2xl font-bold">
+            {author.name.charAt(0).toUpperCase()}
+          </div>
+        )
+      }
+      <div>
+        <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100">
+          {author.name}
+        </h1>
+        {
+          author.bio && (
+            <p class="text-gray-600 dark:text-gray-400 mt-2 mb-4">
+              {author.bio}
+            </p>
+          )
+        }
+        {author.social && <SocialLinks social={author.social} />}
+      </div>
+    </header>
+
+    <section>
+      {
+        posts.length > 0 ? (
+          posts.map((post) => <BlogPreview post={post} />)
+        ) : (
+          <p class="text-gray-600 dark:text-gray-400">Noch keine Artikel.</p>
+        )
+      }
+    </section>
+  </div>
+</BaseLayout>

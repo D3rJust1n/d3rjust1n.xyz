@@ -50,6 +50,6 @@ The Admonition component in `src/components` and, the imprint feature and the To
 ## 🤖 AI-Assisted Development
 
 This project builds on the base template (see Credits above).
-The custom filter components in `src/components/filter/` were created using AI tools (Claude),
+The custom filter components in `src/components/filter/` and the authors feature were created using AI tools (Claude),
 while I implemented other customizations and features myself.  
 A few adjustments were made to the Table of Content feature using AI as well.

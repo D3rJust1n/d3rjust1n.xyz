@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import PostDate from './PostDate.astro';
 import PostTags from './PostTags.astro';
+import Author from './Author.astro';
 import { Image } from 'astro:assets';
 
 interface Props {
@@ -9,7 +10,7 @@ interface Props {
 }
 
 const { post } = Astro.props;
-const { title, description, pubDate, tags, image } = post.data;
+const { title, description, pubDate, tags, image, author } = post.data;
 
 const imageWidth = 800;
 const imageHeight = 400;
@@ -44,6 +45,14 @@ const imageHeight = 400;
     </h2>
     <div class="mb-4">
       <PostDate pubDate={pubDate} />
+      {
+        author && (
+          <>
+            <span class="text-gray-600 dark:text-gray-400"> • </span>
+            <Author authorId={author} />
+          </>
+        )
+      }
     </div>
   </header>
   <p class="text-grey-800 dark:text-gray-200 mb-4">{description}</p>

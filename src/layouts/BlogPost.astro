@@ -2,6 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import PostDate from '../components/PostDate.astro';
 import PostTags from '../components/PostTags.astro';
+import Author from '../components/Author.astro';
 import type { CollectionEntry } from 'astro:content';
 import type { MarkdownHeading } from 'astro';
 
@@ -11,7 +12,7 @@ interface Props {
 }
 
 const { post, headings } = Astro.props;
-const { title, pubDate, updatedDate, tags, image } = post.data;
+const { title, pubDate, updatedDate, tags, image, author } = post.data;
 ---
 
 <BaseLayout title={title}>
@@ -34,7 +35,14 @@ const { title, pubDate, updatedDate, tags, image } = post.data;
       </h1>
       <div class="mb-6">
         <PostDate pubDate={pubDate} updatedDate={updatedDate} />
-        <span class="text-gray-600 dark:text-gray-400"> • </span>
+        {
+          author && (
+            <>
+              <span class="text-gray-600 dark:text-gray-400"> • </span>
+              <Author authorId={author} />
+            </>
+          )
+        }
       </div>
       {tags && <PostTags tags={tags} />}
     </header>
@@ -74,11 +82,11 @@ const { title, pubDate, updatedDate, tags, image } = post.data;
                               : 'ml-8'
                         }
                       >
-                       <a
-                        href={`#${heading.slug}`}
-                        class={`${heading.depth === 1 ? 'text-gray-900 dark:text-gray-100' : 'text-gray-600 dark:text-gray-400'} ${heading.depth === 1 ? 'text-lg' : heading.depth === 2 ? 'text-base' : 'text-sm'} hover:text-primary-600 dark:hover:text-primary-400 transition-colors block py-1`}
+                        <a
+                          href={`#${heading.slug}`}
+                          class={`${heading.depth === 1 ? 'text-gray-900 dark:text-gray-100' : 'text-gray-600 dark:text-gray-400'} ${heading.depth === 1 ? 'text-lg' : heading.depth === 2 ? 'text-base' : 'text-sm'} hover:text-primary-600 dark:hover:text-primary-400 transition-colors block py-1`}
                         >
-                        {heading.text}
+                          {heading.text}
                         </a>
                       </li>
                     ))}

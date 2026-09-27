@@ -43,6 +43,11 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    build: {
+      rollupOptions: {
+        external: ['sharp']
+      }
+    }
   },
   output: 'static',
   adapter: netlify({

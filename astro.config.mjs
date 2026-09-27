@@ -45,5 +45,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   output: 'static',
-  adapter: netlify(),
+  adapter: netlify({
+    imageCDN: false,
+  }),
 });

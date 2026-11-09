@@ -1,42 +1,374 @@
 {
   "items": [
     {
-      "name": "Sora V2",
-      "grip": "claw",
-      "price": "60-100€",
-      "brand": "Ninjutso",
+      "name": "A9 Ultra",
+      "grip": "palm",
+      "price": "30-50€",
+      "brand": "ATK",
       "links": [
         {
-          "shop": "Ninjutso",
-          "url": "https://ninjutso.com/products/ninjutso-sora-v2?ref=hwnw"
+          "shop": "AliExpress",
+          "url": "https://s.click.aliexpress.com/e/_c4sZtXsP"
         }
       ]
     },
     {
-      "name": "V8",
+      "name": "S9 Max",
       "grip": "palm",
-      "price": "60-100€",
-      "brand": "Scyrox",
+      "price": "30-50€",
+      "brand": "EWEADN",
+      "links": [
+        {
+          "shop": "EWEADN",
+          "url": "https://www.eweadn.com/de/products/eweadn-s9?variant=45377427505305&sca_ref=9254561.bckG7X4IghpfY"
+        }
+      ]
+    },
+    {
+      "name": "M7",
+      "grip": "palm",
+      "price": "50-80€",
+      "brand": "Keychron",
       "links": [
         {
           "shop": "MaxGaming",
-          "url": "https://www.maxgaming.gg/de/kabellos/v8-kabellos-8k-superlight-gaming-maus-schwarz?linkId=lp_042351&sourceId=hwnw&tenantId=maxfps"
-        },
+          "url": "https://www.maxgaming.gg/de/kabellos/m7-wireless-maus-schwarz?linkId=lp_042351&sourceId=hwnw&tenantId=maxfps"
+        }
+      ]
+    },
+    {
+      "name": "A9 Air+",
+      "grip": "palm",
+      "price": "50-80€",
+      "brand": "ATK",
+      "links": [
         {
           "shop": "AliExpress",
-          "url": "https://de.aliexpress.com/item/1005010545546372.html"
+          "url": "https://s.click.aliexpress.com/e/_c3kIBcJ1"
+        }
+      ]
+    },
+    {
+      "name": "X1 V2 Air+",
+      "grip": "palm",
+      "price": "50-80€",
+      "brand": "ATK",
+      "links": [
+        {
+          "shop": "AliExpress",
+          "url": "https://s.click.aliexpress.com/e/_c3veDBP5"
+        }
+      ]
+    },
+    {
+      "name": "Ten Air",
+      "grip": "palm",
+      "price": "80-110€",
+      "brand": "Ninjutso",
+      "links": [
+        {
+          "shop": "Ninjutso",
+          "url": "https://ninjutso.com/products/ninjutso-ten-wireless-gaming-mouse"
+        }
+      ]
+    },
+    {
+      "name": "Leviathan V4 GT",
+      "grip": "palm",
+      "price": "80-110€",
+      "brand": "RAWM",
+      "links": [
+        {
+          "shop": "RAWM",
+          "url": "https://www.rawmshop.com/de/products/leviathan-v4-gt"
+        }
+      ]
+    },
+    {
+      "name": "BeastX Max",
+      "grip": "palm",
+      "price": "110-150€",
+      "brand": "WLMOUSE",
+      "links": [
+        {
+          "shop": "WLMOUSE",
+          "url": "https://www.wlmouse.com/en-wl/products/beast-max"
+        }
+      ]
+    },
+    {
+      "name": "Inca",
+      "grip": "palm",
+      "price": "110-150€",
+      "brand": "Lamzu",
+      "links": [
+        {
+          "shop": "Amazon",
+          "url": "https://amzn.to/3Jx71be"
+        }
+      ]
+    },
+    {
+      "name": "Maya X V2",
+      "grip": "palm",
+      "price": "110-150€",
+      "brand": "Lamzu",
+      "links": [
+        {
+          "shop": "MaxGaming",
+          "url": "https://www.maxgaming.gg/de/kabellos/lamzu-maya-x-v2-kabellose-gaming-maus-schwarz"
+        }
+      ]
+    },
+    {
+      "name": "R1 / R1 SE",
+      "grip": "claw",
+      "price": "0-30€",
+      "brand": "VXE",
+      "links": [
+        {
+          "shop": "AliExpress",
+          "url": "https://s.click.aliexpress.com/e/_c3qOBQyT"
+        }
+      ]
+    },
+    {
+      "name": "L7 Pro",
+      "grip": "claw",
+      "price": "30-50€",
+      "brand": "Mchose",
+      "links": [
+        {
+          "shop": "AliExpress",
+          "url": "https://s.click.aliexpress.com/e/_EzBacm6"
+        }
+      ]
+    },
+    {
+      "name": "NM1",
+      "grip": "claw",
+      "price": "30-50€",
+      "brand": "Nubi",
+      "links": [
+        {
+          "shop": "Galaxus",
+          "url": "https://www.galaxus.de/de/s1/product/nubi-maus-nm1-wireless-schwarz-kabelgebunden-kabellos-maus-72491843"
+        }
+      ]
+    },
+    {
+      "name": "Dash Max",
+      "grip": "claw",
+      "price": "30-50€",
+      "brand": "Akko",
+      "links": [
+        {
+          "shop": "Akko",
+          "url": "https://akkogear.de/products/dash-gaming-mouse-black?variant=48246422077685&ref=Akko22"
+        }
+      ]
+    },
+    {
+      "name": "CarbonX",
+      "grip": "claw",
+      "price": "50-80€",
+      "brand": "Epomaker",
+      "links": [
+        {
+          "shop": "Epomaker",
+          "url": "https://epomaker.de/products/epomaker-carbonx-mouse"
+        }
+      ]
+    },
+    {
+      "name": "F1 V2 Ultimate",
+      "grip": "claw",
+      "price": "50-80€",
+      "brand": "ATK",
+      "links": [
+        {
+          "shop": "AliExpress",
+          "url": "https://s.click.aliexpress.com/e/_c3LkdfkT"
+        }
+      ]
+    },
+    {
+      "name": "Dash Ultra",
+      "grip": "claw",
+      "price": "50-80€",
+      "brand": "Akko",
+      "links": [
+        {
+          "shop": "Akko",
+          "url": "https://akkogear.de/products/dash-gaming-mouse-black?variant=48246421979381&ref=hwnw"
+        }
+      ]
+    },
+    {
+      "name": "Sora V3",
+      "grip": "claw",
+      "price": "80-110€",
+      "brand": "Ninjutso",
+      "links": [
+        {
+          "shop": "Ninjutso",
+          "url": "https://ninjutso.com/products/sora-v3-wireless-ultralight-gaming-mouse"
+        }
+      ]
+    },
+    {
+      "name": "Hyperlight",
+      "grip": "claw",
+      "price": "80-110€",
+      "brand": "Hitscan",
+      "links": [
+        {
+          "shop": "MaxGaming",
+          "url": "https://www.maxgaming.gg/de/kabellos/hitscan-hyperlight-schwarz?linkId=lp_042351&sourceId=hwnw&tenantId=maxfps"
+        }
+      ]
+    },
+    {
+      "name": "G6 HE",
+      "grip": "claw",
+      "price": "80-110€",
+      "brand": "Keychron",
+      "links": [
+        {
+          "shop": "MaxGaming",
+          "url": "https://www.maxgaming.gg/de/kabellos/keychron-g6-he-8k-schwarz"
+        }
+      ]
+    },
+    {
+      "name": "F1 V3 Extreme",
+      "grip": "claw",
+      "price": "80-110€",
+      "brand": "ATK",
+      "links": [
+        {
+          "shop": "AliExpress",
+          "url": "https://s.click.aliexpress.com/e/_c2RCxIkj"
+        }
+      ]
+    },
+    {
+      "name": "Huan",
+      "grip": "claw",
+      "price": "110-150€",
+      "brand": "WLMOUSE",
+      "links": [
+        {
+          "shop": "WLMOUSE",
+          "url": "https://www.wlmouse.com/en-wl/products/huan"
+        }
+      ]
+    },
+    {
+      "name": "HTX Ultra 8K",
+      "grip": "claw",
+      "price": "110-150€",
+      "brand": "GWolves",
+      "links": [
+        {
+          "shop": "G-Wolves",
+          "url": "https://shop.g-wolves.com/products/htx-ultra-8k-wireless-mouse"
+        }
+      ]
+    },
+    {
+      "name": "Phantom",
+      "grip": "claw",
+      "price": "110-150€",
+      "brand": "ATK",
+      "links": [
+        {
+          "shop": "AliExpress",
+          "url": "https://s.click.aliexpress.com/e/_c3PLXE2P"
+        }
+      ]
+    },
+    {
+      "name": "Maya CE",
+      "grip": "claw",
+      "price": "110-150€",
+      "brand": "Lamzu",
+      "links": [
+        {
+          "shop": "Lamzu",
+          "url": "https://lamzu.com/products/lamzu-maya-champion-edition?srsltid=AfmBOoqKPw3aPOBSLQm-G_U3_5QwS5-uepi-sGRntUE3Oe5qjzGMCBvy"
         }
       ]
     },
     {
       "name": "M4",
       "grip": "fingertip",
-      "price": "0-60€",
+      "price": "30-50€",
       "brand": "Keychron",
       "links": [
         {
           "shop": "Keychron",
           "url": "https://www.keychron.com/products/keychron-m4-wireless-mouse"
+        }
+      ]
+    },
+    {
+      "name": "Beast Miao",
+      "grip": "fingertip",
+      "price": "110-150€",
+      "brand": "WLMOUSE",
+      "links": [
+        {
+          "shop": "WLMOUSE",
+          "url": "https://www.wlmouse.com/en-wl/products/miao"
+        }
+      ]
+    },
+    {
+      "name": "Orcus",
+      "grip": "fingertip",
+      "price": "110-150€",
+      "brand": "Lamzu",
+      "links": [
+        {
+          "shop": "MaxGaming",
+          "url": "https://www.maxgaming.gg/de/kabellos/lamzu-orcus-kabellose-fingertip-gaming-maus-orange"
+        }
+      ]
+    },
+    {
+      "name": "Fen Max",
+      "grip": "fingertip",
+      "price": "110-150€",
+      "brand": "GWolves",
+      "links": [
+        {
+          "shop": "G-Wolves",
+          "url": "https://shop.g-wolves.com/products/g-wolves-fen-max-asym-pre-order"
+        }
+      ]
+    },
+    {
+      "name": "Fenrir Pro 8K",
+      "grip": "fingertip",
+      "price": "150€+",
+      "brand": "GWolves",
+      "links": [
+        {
+          "shop": "G-Wolves",
+          "url": "https://shop.g-wolves.com/products/g-wolves-fenrir-pro-8k-wireless-mouse"
+        }
+      ]
+    },
+    {
+      "name": "X2F",
+      "grip": "fingertip",
+      "price": "150€+",
+      "brand": "Pulsar",
+      "links": [
+        {
+          "shop": "MaxGaming",
+          "url": "https://www.maxgaming.gg/de/kabellos/labx2f-size1-schwarz?linkId=lp_042351&sourceId=hwnw&tenantId=maxfps"
         }
       ]
     }

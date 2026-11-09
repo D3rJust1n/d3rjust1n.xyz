@@ -17,7 +17,7 @@ export const mouseSchema = fields.array(
       label: 'Preis',
       options: [
         { label: '0-30€', value: '0-30€' },
-        { label: '30-50€', value: '30-50'},
+        { label: '30-50€', value: '30-50€'},
         { label: '50-80€', value: '50-80€'},
         { label: '80-110€', value: '80-110€'},
         { label: '110-150€', value: '110-150€'},

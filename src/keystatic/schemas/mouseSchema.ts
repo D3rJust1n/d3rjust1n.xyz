@@ -16,14 +16,14 @@ export const mouseSchema = fields.array(
     price: fields.select({
       label: 'Preis',
       options: [
-        { label: '0-60€', value: '0-60€' },
-        { label: '60-100€', value: '60-100€'},
-        { label: '100-150€', value: '100-150€'},
-        { label: '150-200€', value: '150-200€'},
-        { label: '200-250€', value: '200-250€'},
-        { label: '250€ +', value: '250€ +'}
+        { label: '0-30€', value: '0-30€' },
+        { label: '30-50€', value: '30-50'},
+        { label: '50-80€', value: '50-80€'},
+        { label: '80-110€', value: '80-110€'},
+        { label: '110-150€', value: '110-150€'},
+        { label: '150€ +', value: '150€ +'}
       ],
-      defaultValue: '60-100€',
+      defaultValue: '80-110€',
     }),
     links: fields.array(
       fields.object({
